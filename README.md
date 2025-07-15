@@ -1,0 +1,2 @@
+# ERC20 Token in Move
+This module implements a basic ERC20 token using the Sui Move programming language. It provides functionality for initializing the token with metadata (name, symbol, decimals, and description), minting new tokens, transferring tokens to specific addresses, and burning tokens. The token leverages the sui::coin module for currency creation and management.
