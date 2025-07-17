@@ -33,3 +33,8 @@ public fun mint(treasury_cap: &mut TreasuryCap<TOKEN>, to: address, amount: u64,
 public fun burn(treasury_cap: &mut TreasuryCap<TOKEN>, coin: Coin<TOKEN>) {
     coin::burn(treasury_cap, coin); 
 }
+
+#[test_only]
+public fun test_init(ctx: &mut TxContext) {
+    init(TOKEN {}, ctx)
+}
